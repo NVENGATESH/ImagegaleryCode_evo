@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Filterable Gallery</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="filter-buttons">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="cats">Cats</button>
+        <button class="filter-btn" data-filter="dogs">Dogs</button>
+        <button class="filter-btn" data-filter="humans">Humans</button>
+        <button class="filter-btn" data-filter="birds">Birds</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="technology">Technology</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+        <button class="filter-btn" data-filter="abstract">Abstract</button>
+    </div>
+
+    <div class="gallery" id="gallery">
+        <!-- Images will be generated here by JavaScript -->
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/app.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+
+    </script>
+</body>
+</html>
